@@ -11,6 +11,7 @@ pipeline {
             steps {
                 sh '''
                 pwd
+                cd jenkins.git
                 git branch
                 '''
             }
