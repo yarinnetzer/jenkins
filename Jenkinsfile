@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World'
+                sh ' myusr=git config -l | grep user.name | awk -F '[=]' '{print $2}'
+                sh ' echo "Hello $myusr" '
             }
         }
         stage('pwd') {
