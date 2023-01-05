@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh '''
                 pwd
-                cd ./jenkins
+                cd /var/lib/jenkins/workspace/pipe1/
                 git branch
                 '''
             }
