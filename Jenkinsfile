@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh ' myusr=git config -l | grep user.name '
-                sh ' echo "Hello $myusr" '
+                sh ' echo Hello $hostname '
             }
         }
         stage('pwd') {
